@@ -1,0 +1,489 @@
+<!doctype html>
+
+<html>
+
+
+<head>
+
+
+<title>Restaurant</title>
+ <meta charset="utf-8" />
+ <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ 
+
+ <style type="text/css">
+
+ html {
+      scroll-behavior: smooth;
+      }
+
+  .top{
+            background-color :red;
+            height :150px;
+            width:100%;
+            position :fixed;
+            
+         }
+.header{
+          font-weight :bold;
+          font-size :250%;
+          text-align :right;
+          padding :30px 30px 20px;
+       }
+  .logo{
+         width:100px;
+         height:100px;
+         margin-top:-97px;
+       }
+  a:hover{
+            background-color:#7FFF00;
+         }
+ a:active{
+            color:yellow;
+          }
+
+ .intro{
+    
+        float:left;
+        
+        
+       }
+  section{
+           display:flex;
+           background-color:#ea1b23;
+         }
+
+ .title{
+         font-size:300%;
+         color:yellow;
+       }
+
+ .subtitle{
+            font-size:500%;
+            color:blue;
+          }
+
+  .specs{
+          width:100%;
+          
+        }
+   .specsheader{
+                 color:#DC143C;
+                 background-color:#FF00FF;
+                 border:20px black dashed;
+                 width:700px;
+                 font-size:500%;
+                 text-align:center;
+                 margin :auto;
+                
+               }
+ .subspecs{
+             color:#4B0082;
+             font-size:300%;
+             text-align:center;
+             background-color:dodgerblue;
+             width:800px;
+             margin:auto;
+          }
+
+ .card1{
+         height:700px;
+         width:400px;
+         background-color:#F5F5F5;
+         margin:50px ;
+         float:left;
+         border-radius:40px;
+       }
+
+ .card2{
+         height:700px;
+         width:400px;
+         background-color:#F5F5F5;
+         margin:50px ;
+         float:right;
+         border-radius:40px;
+       }
+
+ 
+ .curryhead{
+            font-size:300%;
+            text-align:center;
+            color:green;
+            
+           }
+ .cursubhead{
+             font-size:200%;
+             text-align:center;
+            }
+ .price{
+         color :red;
+       }
+ button{
+      
+        width:70px;
+        height:30px;
+        font-size:50%;
+       }
+ button:focus{
+              background-color:green;
+              content:'ADDED';
+              color:red;
+              display:inline-block;
+              
+             }
+
+ .recotitle{
+             width:500px;
+             font-size:400%;
+             margin:auto;
+             border:15px red solid;
+           }
+
+ 
+ .recosubtitle{
+             width:400px;
+             font-size:300%;
+             margin:auto;
+             border:10px blue dashed;
+             margin-top:30px;
+             margin-bottom:40px;
+             text-align:center;
+           }
+
+.search{
+        width:500px;
+        height:50px;
+        border:5px black solid;
+        margin:auto;
+        margin-bottom:50px;
+       }
+ .inputbox{
+           width:450px;
+           height:45px;
+           font-size:150%;
+          }
+ .icon{
+       float:right;
+       padding-top:5px;
+      }
+ .revhead{
+          font-size:400%;
+          text-align:center;
+          width:300px;
+          height:100px;
+          margin:auto;
+          border:10px black ridge;
+         }
+ .revcard{
+          width:800px;
+          height:200px;
+          border:5px green solid;
+          margin:50px;
+         }
+ .revimg{
+         float:left;
+        }
+ .revname{
+          font-size:200%;
+          color:blue;
+         }
+ .revline{
+          font-size:150%;
+         }
+ .urrev{
+        width:80%;
+        height800px;
+        margin:auto;
+        background-color:#F0FFF0;
+       }
+ .urrevhead{
+            font-size:250%;
+            color:blue;
+            text-align:center;
+           }
+ .urrevname{
+            float:left;
+            width:400px;
+            height:50px;
+            font-size:150%;
+           }
+
+ .urrevemail{
+            float:right;
+            width:400px;
+            height:50px;
+            font-size:150%;
+           }
+ .revarea{
+          margin:auto;
+          width:500px;
+          height:200px;
+          font-size:200%;
+         }
+ .revsubmit{
+            height:40px;
+            font-size:100%;
+           }
+ .fhead{
+        width:300px;
+        height:60px;
+        font-size:250%;
+        margin:auto;
+        margin-bottom:150px;
+        padding:20px;
+        color:MediumBlue;
+        background-color:Linen;
+        border:5px Magenta dashed;
+       }
+ .priv{
+       font-size:200%;
+       margin-left:200px;
+      }
+ .end{
+      width:200px;
+      margin:auto;
+     }
+
+ </style>
+
+ </head>
+
+  <body>
+     
+      <div class="top">
+  <div class="header">
+          
+            <a href="#home">Home</a>
+            <a href="#specs">Specialisation</a>
+            <a href="#reco">Our-Recomendation</a>
+            <a href="#review">Reviews</a>
+            <a href="#footer">Footer </a>
+  </div>
+         <div class="logo">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANgAAADpCAMAAABx2AnXAAABIFBMVEX///8REiTylACKFRsAAADa2tvykgDxjwDxjQDxkACCAAD///zxiwD3xovcwcL3v4GIChKeS0384ciBAAD758v748KeUFIAABf63L0AABr++/T1rVvZu7z+9ez63Lb8+vrzpj30sFfzp0zCwsHr6+sAABj51Kn3yJO9io358vSRKi761rTymBj1tGfzoTTznCX87dn2uG6HAA2Mi4q6uriZmpcXGCmUlJpBQUwnKDZmZ2/51av76tT1tmumXF60eXuaQEPRrq/R0dCpqKd7enh5eYFfYWsAAA70rEb2voP1qVT4z5zypC/1s1rKnqHw5OSPHyWtamzElJTo1NWWNzu2fH42NjRpaWeCgoBSUU5hYF06PEeCgoqbnaRNUFkhIjCpCu7cAAAS4klEQVR4nO1dC0Pauh6HCmlKy8pUBi0rIDKYWymtL55uUwSdzDm3nbudK+r3/xY3r5YWgSkU0d3+zpnStKT59f9MmsRQKECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAL7C7MvWgdzSlt0On7Fe4HlBEHgoZNrLbouPEC1e4BgEGF92c3yDmIecC1Jl2Q3yCxs85wGUl90if1CSGCEAbJkll90mP6DqlI8g6Dpk1KrLbpQfaFEDg5m2qq0WqBOR1pfdKh+QwVwAb9GjM8JM+AusTNSJeekqPdSIwYG/QBdV4hIFx8V/AYTnMpvkD1RiYoJlH28QYkBcZpt8gUqMCpzZx9zfIjHRoCJiKWKaCBCcLrdRvsCiIquSvL5NBMbx5WW3yge0aRwDgpzNWixCw7+h92IawM7r7cQDVFefOTM1bRmcnSEOAYDE5eVnm32I6XPUu7xLi3ETICc/x06n+ZmTJrGyIUhGSV12Qx+Gdkbg/8CKCg7q8WdEzdyAXlYAAB7yEKJ/SDmB5wwv                       lJ9JGqJZkqfpPOSMMyveSq+urqZbZTljcNCjpJBrLbvN90GJE4akBEnIlNc1r0hEbTVegNB1mVQwl9Tae0MrDLUQadlBepIFqa1Tl9yA0H/UZj4YWUEY0sq3pvsFLa4Ph69g4SnHbNlpKID3GRlVW1VHwIL+ZCO2WrB5IaO5Z+wVSxzvPIvSYts3KzTdVkO+6hlf07Lx08pErRRlO+IB6UkOEpu2NwTQHXPNckFAXmLawPa6YUtaeoKDPCZLdoHAuWwlW0AZCA7P0jSvJ8p25IPWlMuWAtPOJ+C5Iy61z0FAsl3Dyk7/etLuAzy14W/HvlxmUsIDvwBylew9HLlZZUENPqnOtcg6ky7HZuYRLUGq/iGWOVDzzIfA94tq5QzICCwmOxoXlwREs/CA0CQWGDPp6fTSymxYA9peHidWKPN42EsV8Yw9Hv2p5CBt9p4I2vJqI4sDUv+hvRExT5kJGb9bOBvs90TQ9uhZZF28MUO+7tT0NFIQi+ZEvO2osxIA0Jqp82gHwycxPLfODMxgx1nkA6aG42nIsso2/GrdHKCeHgD2kJMoieD/EI6ngPUP4Ow1+IU+9EQfE9nXXK2q0udUXfYQj0qtwnZkKmqXNNcIBhsRh8vuUbMQxjNFrPBz50QyT1V7uUNXzEHbZFqS693lrFVSHViyyEr0dRdHLUJFXRR9buOgVgv0pYrM8DzdiuDLRIcnkAwnJbcLQxGN96OjWKLv4ws+VDUrKp73kxuoS+VHymBb2fIGUVU6dsZc4rrkl8XLJBnmlze08x66YxgSmE8Gb7LX1mNPqlo72y+Xy/2subAgfk4awOayaZJ/78zzYAIxs1Sp8hKks1Whbi1mjJUGMcBRMcV5TvLLQ5dQB2HMuE66IOBhFM4G6kVMHq+cA23qvagjFKtA8G/srAKhVBhpc9sYeetG7r6I7jZNpyBNDRFLPyfrtUurIyXxMbQws7x/N7VRoVP0qFeO8z4kHVNwII2jhR+s79NVW                       bgxqGEV/NTEuziAE3gtYO6jZ16bxgG4wBeu/UnyWsS8LDqnUqBhVKzCBQ5UaBPlhRrg+zACnWIJWDdFKy0wA9qYMrVC8H1MXCW9eCAs/kVkm5/MaxEDxwc081n8wK0lTOYF8v7fb5VqvqAvOA3XxswzcwAXoTBsFj0QFjpyq5anaCK/kPdppu2sYH5Bhia2+xl9Cq9FKCJG1n7FKsCC/wlAsn/KTZ4YSG47z/Djary/rk36fsuZ4wYkveyXralasnygo94J4KaZF8fn5/Fbp5Ik8dWMnB7b7CQYTsUR+Hx8fb58UTRXS/JZFcCpgmKQNua6mZiM62RCnqBv9O+aklZwZTuA57nTcnKW+6moX3xg6ADdB9zhdLfEp1khWmtDR9rOCxAWyskR+bd0d4cCT32QuEy51dbUP/c7RVUzk/34wRdOkiZJCQhQ50andQJozBeY1cJBi+ig2pbzEJIZlaAge8ip5dH7AkGAkqDnM1a8n15tm6amqTZNxEUz2+10KW5VzgxOkCAUxgjJVgEIDXQ3TfbMWAU8N+/sTbUgSYIRpyqotSpEUzA5dDvXVSVdGqct+EqkxajZuq5XKXSdCAHiZbZgEiHsNAQeSlU5yyY7ajKQyFwYrBJc2Yeun9o6FRA5K8tGReN5Ds8IAILElVxPbd3S4WSDB15Musy+WMCzUiulda9UVuVTo1o1CmXfgqZWKkBsOCyB17IWXXoj5d2eUk3KqO9yD282nZIE9TOr1J7gyFWfeulJe4BL63+RoATyfUqlzN7vc94YIJqlCifBaSo2gRAWEnp2+c/95MSg6SdKiIzMNMIsG8g0JD3eFkOfWfQSxoz9aelyoYpyEf6PSofO4uFBHujGqdVPtx/zLabWNyRkwm3KrR03JJ6XqmeOwk0a1Nba6biVQU4PIq+HxzcF4iqwaAQ62okEqxtnBzIitLgh3WkQ1y0Jc6M6KbZlTnJ53ulL3HCYWs+WyuW4bFU2NjYKhcJGxZLj5X                       4r2dbuE+gWhAOuj41YbeXRA+Zsua1bLg2D6WU1bh685yXeIiZmIiUkOkm0xtWlXfBrLG1B3XOzgkzEIGJDKol8ByQ66R5cWdzLYjUZL3DcwYIM0DxDOQLcIBYmZk9xysDpnjEIKKc1341FzcYN3BcDAC5sPWe7wvNAqpaJUmjl/J0xdES2avVHF3rMClFr9y13pJcWN6RiWsgRQpAhfkJsj4tIKGPgjEx8vlikmukyChES79WIRe4lgVJQHjWeI2I7Hx92cYhCEUvfiJeS5sOkJ2rJVnmjir7P30n0AVxslFPLKMnleGkjnZ7aXcddFtQjg9yp9bncSqIOizYuvxNV1HtBfbFW+bNV0NEXxnfGcPdg4Wuw1JaB+ibIoEZuPYEfFiDus3Bc1cifZTKZysGBhVCpoM9nBaOqc+T8lM4YSsvy8UeZO5DEc30998YuEsJpOaHdVRGG+HPvBefE/Jd49vFyLdMCQ68ocPh5quv9cwPAe63JvAcwJ8E47885LPRwaNjYaEfWctIC0UyWK8hH417+7JRwf5uvVuIP9T1+QczKXzjuyx3tF9V2CeUKxHDAROO7Qwf/J+ClqdxpvNReXmL8R4hmuiWf58lQGtk/zGtTbpvDIyKoM5Y/l1vpJUnp4RA101zN9nGH5SyPfSCJdISdjv0k7r70W6um6X8+9ngQRRS3XEDHy25SgAABAgQIECBAgAABAgR4bsi9/PDhw6sf7iJX77JfODs7Kzz+Qu7Ll6+GuJypitxaIpFYe4F3R3CQke3XhDKeC7OE/cY/xRIOYi9nqiK3trKyEsPEoDOaA3h7phBZSSU8PrGXiRUHiXmJeSZSAomskv77iHGArORbLrHtGMGnmaoYJSbgwTfCDK8A8I1YH7/osO49E44Q2758S/B1pjuOEANyPG6xPWdNH4ll8DwZ6d5TFwgx3CqCmQYBR4hJ+B0D3U0Xz6DwjxiukX8gsdfz3HGUGHmBQZbh8v2nRmzrxeHh6wt                       v83+8Pjz8seUt29rayoVC44iRCSLjiJHxYfqLvJYQCei0Tc97CtHMtrLOOL/oELvn2DIldoibSBqJ8eJDbA25krWfX3MO07ffSFHsckj39eUKKvr5z0XsriqS5TCAH1VFsZXhIOQMeR2X4rUP67phGNVzVa5CSeLzzvY7WlyXIJ6pJtM3WJZBd52voovvT2zl2zuMFSq4j7Ft5v5jnxiNFysxFhK2Y8zDbL2klyXomSExWHr/vmQ4awTdxLQ8noOKwzf+QVZEJiUczqtsk0IgbVBmSXtrP8ADEg7t2WrI4+YfQIwidohLLmPDku0VonsvYq6r1gizrXfbK2643D1vT90gqxtcxDTOuyYHSyxJN1JwltDS5IvtAEDe2ACyHUpmuKfm/ea53CH2dc3d3u1XmMQ3ehG7dO3CRd/++pgATdeouogVePbQ7xDjBMgJbMkT0mQVXwKEQsXA3yDL/4fEuBmJMc1KfKNSWkNZ+3dSFou9i5EP2x9CoR+Ufmz75R1VdJ6sRBayDYkx4UA9z7YJdUmsYOL52+RptOkWJgDvBSiSMrxkv8DmWCNLNKYz8hCjmccaIvaath018+IlVrbtj6EQUbrYR+RJvtKzF6G3lOv3kF3mIkZeaQII6LSNITGyCg1gk1HpClMXMfJ+nSwjR4pH1pMLMnKUokhkx+HJcWf4rFDS7jlNjnrFt4cESMc+bq/YAXvrHTqX+Bm6WGNiCjHhodNEOTFphH+8XhHoCMZZn80FcIiJZN0gT+mSpfgOMbYj1CkjRnfTARIG1WnMZaY49sJznPiUG7b429aL2PAS6tq/UoVdo53LH944Bk0copwKHWIaffj0DNnJY0gsTwo3BEqsNLoClRjrnAGaEHtFP393EWMkLhKU2JrjRUJUoi5iXlUZEiOayLaVIH+8ZhKxPnEZgHcgOX5xdmKXWBUTtMWvMMl3OSqR76SISu81lRgLaV9HAvQEYnSZOFvBeiBMIUZ2GROs9w5aM6vi                       kBhp5fal8xFLj4gnhkV28TNBP1Kfk8BlP0a84iRioQKJSgY+/Z7nphAz8Vm2dw19Vx+an9gFZfHz6+GHmB0CPjC3ePiWhC3kT5grXIldfr3cTtyTWJzuMcHJZbZz5CRi7O+JYA4kNaNr8edNgmnkTcRYspFAfuQHZbEdiznhbiuRYGXbowF6IjGNRmbgTFaaRIx6DyAZlVM8EkR74nMT21pxhWzmDN/G3EVkAOHQXXQ/YqHyyD4CE4mF6MaSrCPOhrjm7rb82HbanFhjGe/HNYdt7BPturx1ikYC9CSviGA5f3lNsL34eGLqcOduYP9BvQcS+0R6I57+2NZlLLa9nUCa98kZBT18h8tQUeKtXfSaFOESuwpRgtg3jxCTcNlnelDS8bQylBhapJRk93ju+Bdy9lSyXTvKpVDqIuAZnro91logZ+9N7McLDG+fMnRx+PHyw+V39+Bu7sVbVPTP4Zan6OPHf15vhUgV+MQqRtrbETRJoT1/Tk3LloX/yCYpRY9AIx9oDGjbhRhaycpkKvJwG33P2QABAgQIEOD/CMXNzRz9dcRKjjpR/Cu6ecROkMMcOb25uVlEp9AJXFgs0qKct0LP90aPc7QU/Syi4iOnviL5lCvSmqPzE9vsHB2jX53dKKvseLfY2cO/o0e/0A07m9Eiue4/uHnRX7iVe0X6bwc35Vc06iHW2T3aQb92juj3UAWb7mNaT+g3/Xbx+GiLftoj56MddGN82lPlbMQ2Q7/w7e1ntLuJfhTprXeRlDq0eaHf0T3WIEqquBfK4YPczkiFu1HSrD27aagCfN0OOz4+2sW/dmgt9LId9qCGxHZ8IPbrmBA73iE3HFb5O0cl9nsHU43u5P6bC7FHSRpxTHiHcv/u0a/kmMh3j48xkb0d8j1c868deowvP9or/ncsMXSfqL/ENomQHIl18O2JxIr/4iSXSWyn0yHMh8SOdsndHYkVmZHuFkllbokRtaVHx53O8dE4Ynsk1faTW                       Cd6XCQ2xnTu1yazsRCxFWpjueMQveOxQyz0bwf/zP0qjtoYqdBlY/Q4SmwI14w1ZA9dFbIZDFUx9KvYwdX+HjHcGVDc3S3SX7ZX3CRCw44JOwp6gvg/2xmG6E3ZrTd3d3NjKozaFQ6Po656QrudYSWkYlpJsUMUOEq/FCBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECDAQxH9SxGK/KUIhf9SBMSeG6YSUxTPEfv3PMCIXaF/jX32mf0Op3o3qcaVfeX+jRK+7V2FnwkoMaXZU1K1VCoVfpOK1PaVVOqNkop0ELrXkZNIJKxEIo2jSORqUF9ye+8NJrHbWup20K0NIt1ad1Br1Grd+vVN9CYSaRZ7tehRox6N3mzWo436I0tMGfNxxD4URdnHZfth/Eux1Y0RS9X2m81uqttsRiIDpRaOdLs3J/Wj6KBZQ5LqdTavIo1iVHlcE1NubrrhW+V2v55qKOHeoH6lNFK3+wN0pvGmoezv36aavdpNrde7btbqzVqv1hs0e9cnbmJKrzdA5c1uXUkNwtcnqebgRjmJKNFu7WY3crV7dHLSKB7dPrLvaHQH3Q4i1Gl2m52bQf26220O6ps3J4Net9mtXQ/q3cigN7iOoP+vb3r1QTfcveoqbmJhpdO9rSmNRg05iF6zF671bhT0HLD6Rbub3dput35Uj548LrGTWnPQvKnVr1Hra1fNWg0dD+q7zQYWUw0L62rQvO12B+EdxDjVrA2a3QHTRYdY81Zp7HSVRq170ow0B7eNhnJTG7xBnlGp9U5OkEo2I93H9omN8Ju6coWaUlcaYaSQ4auTq8Zt40qpp+rKfmO/Hr66ucLl4bpyiy5Mkc8eYsQk36AfKQWbYIoUpd6QWIaKcInyJKPYpDb9f2YezxkBseeG/wHM6EsbhXTD+QAAAABJRU5ErkJggg=="height=150px width=150px align=left>
+  </div>
+     </div>
+ <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+     <div class="intro">
+              <section>
+                       <a name="home"></a>
+                        <article>
+                               <p class="title">Food Planet</p>
+                                <br />
+                               <p class="subtitle">Get all your choices at a single place </p>
+                        </article>
+                        <article>                                 
+                              <img src="https://images.all-free-download.com/images/graphicthumb/restaurant_menu_cover_template_male_cook_cartoon_character_6835936.jpg"width=700px height=600px>
+                        </article>
+                    
+              </section>
+              
+     </div>
+         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <div class="specs">
+            <a name ="specs"></a>
+            <p class="specsheader"> OUR SPECIALITIES </p>
+            <p class="subspecs"> Dishes that most of the person likes </p>
+    </div>
+
+      <div class="cards">
+                 <div class="card1">
+
+                     <img src="https://image.shutterstock.com/image-photo/chicken-curry-legsdrumstick-murg-tangritangdi-600w-1239548080.jpg" width=400px height=300px>
+                     <p class="curryhead">chicken curry </p>
+
+                         <div class="cursubhead">
+                             <p> with legs (tangdi masala)5pcs </p> 
+                             <p>Rs <strike> 500 </strike> <span class="price"> 400/- (20%) </span><p>
+                             <button>ADD</button> <br />
+                             <p>(non-veg)</p>
+                         </div> 
+     
+                 </div>
+
+                 <div class="card2">
+
+                     <img src="https://www.cityshor.com/uploads/article/09_2017/1506691966_web_8_.jpg" width=400px height=300px>
+                     <p class="curryhead">Tandoori chicken </p>
+
+                         <div class="cursubhead">
+                             <p> 2pcs chicken with salad </p> 
+                             <p>Rs <strike> 250 </strike> <span class="price"> 200/- (20%) </span><p>
+                             <button>ADD</button><br />
+                             <p>(non-veg)</p>
+                         </div> 
+     
+                 </div>
+
+                 <div class="card1">
+
+                     <img src="https://thumbs.dreamstime.com/z/indian-vegetarian-main-course-matar-paneer-curry-served-roti-peas-cottage-cheese-curry-tomato-salad-chapati-125773264.jpg" width=400px height=300px>
+                     <p class="curryhead">Matar-paneer </p>
+
+                         <div class="cursubhead">
+                             <p> full plate </p> 
+                             <p>Rs <strike> 400 </strike> <span class="price"> 360/- (10%) </span><p>
+                             <button>ADD</button><br />
+                             <p>(veg)</p>
+                         </div> 
+     
+                 </div>
+
+                 <div class="card2">
+
+                     <img src="https://www.thespruceeats.com/thmb/cAzQFP9fcnrWfV-vMNzR6uRPrs8=/1348x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/malai-kofta-vege-balls-in-a-thick-sauce-1957964_hero-01-474bc099313944668d3b2c68b88549d5.jpg" width=400px height=300px>
+                     <p class="curryhead">Malai-Kofta </p>
+
+                         <div class="cursubhead">
+                             <p> Full plate (6pcs) </p> 
+                             <p>Rs <strike> 200 </strike> <span class="price"> 170/- (15%) </span><p>
+                             <button>ADD</button><br />
+                             <p>(veg)</p>
+                         </div> 
+     
+                 </div>
+       </div>
+ <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+
+             <div class="reco">
+                    <a name="reco"></a>
+                    <p class="recotitle">-:Recomendations:- </p>
+                    <p class="recosubtitle">You may also like </p>
+                  <div class="search">
+                          <input type="text" class="inputbox" placeholder ="search your favourite dish here...">
+                          <img class="icon" src="https://image.shutterstock.com/image-vector/magnifying-glass-search-icon-flat-260nw-738763579.jpg"width=40px height=45px>
+                  </div>
+
+                     <div class="card1">
+
+                     <img src="https://c450v.alamy.com/450v/b86f4dd2-bf40-4b39-90ec-7063fde85993/2BD4AR1.jpg" width=400px height=300px>
+                     <p class="curryhead">Fried fish </p>
+
+                         <div class="cursubhead">
+                             <p> with salaad (2pcs) </p> 
+                             <p>Rs <strike> 400 </strike> <span class="price"> 380/- (5%) </span><p>
+                             <button>ADD</button> <br />
+                             <p>(non-veg)<p>
+                         </div> 
+     
+                     </div>
+
+                     <div class="card2">
+
+                     <img src="https://c450v.alamy.com/450v/fab03bb7-8290-4b0f-be9f-82f252ef0648/2BJ42Y4.jpg" width=400px height=300px>
+                     <p class="curryhead">Mutton curry </p>
+
+                         <div class="cursubhead">
+                             <p> indian meat curry 5pcs </p> 
+                             <p>Rs <strike> 1000 </strike> <span class="price"> 800/- (20%) </span><p>
+                             <button>ADD</button> <br />
+                             <p>(non-veg)<p>
+                         </div> 
+     
+                      </div>
+
+                      <div class="card1">
+
+                     <img src="https://www.sailusfood.com/wp-content/uploads/2018/06/raju-gari-kodi-pulao-370x220.jpg" width=400px height=300px>
+                     <p class="curryhead">Chicken pulao </p>
+
+                         <div class="cursubhead">
+                             <p> with salaad and dahi </p> 
+                             <p>Rs <strike> 800 </strike> <span class="price"> 720/- (10%) </span><p>
+                             <button>ADD</button> <br />
+                             <p>(non-veg)<p>
+                         </div> 
+     
+                     </div>
+
+                     <div class="card2">
+
+                     <img src="https://c.ndtvimg.com/2020-04/5l1httig_dum-aloo-_625x300_15_April_20.jpg" width=400px height=300px>
+                     <p class="curryhead">Dum-aloo</p>
+
+                         <div class="cursubhead">
+                             <p> mashed peas and mangauris</p> 
+                             <p>Rs <strike> 300 </strike> <span class="price"> 240/- (20%) </span><p>
+                             <button>ADD</button> <br />
+                             <p>(veg)<p>
+                         </div> 
+     
+                     </div>
+       
+                     <div class="card1">
+
+                     <img src="https://hurrythefoodup.com/wp-content/uploads/2020/09/Easy-Vegetable-Biryani.jpg" width=400px height=300px>
+                     <p class="curryhead">Vegetarian biryani </p>
+
+                         <div class="cursubhead">
+                             <p>variety of fresh veggies</p> 
+                             <p>Rs <strike> 400 </strike> <span class="price"> 380/- (5%) </span><p>
+                             <button>ADD</button> <br />
+                             <p>(veg)<p>
+                         </div> 
+     
+                     </div>
+
+                     <div class="card2">
+
+                     <img src="https://hurrythefoodup.com/wp-content/uploads/2020/09/sweet-potato-curry-683x1024.jpg.webp" width=400px height=300px>
+                     <p class="curryhead">Sweet potato curry</p>
+
+                         <div class="cursubhead">
+                             <p>best dish for mid-week dinner</p> 
+                             <p>Rs <strike> 500 </strike> <span class="price"> 450/- (10%) </span><p>
+                             <button>ADD</button> <br />
+                             <p>(veg)<p>
+                         </div> 
+     
+                     </div>
+             </div>
+      
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+             <div class="review">
+                            <a name="review"></a>
+                            <p class="revhead"> Reviews <p>
+                     <div class="revcard">
+                            <img class="revimg" src="https://www.forbesindia.com/media/celeblist2019/big/012_Ajay%20Devgan.jpg" width=200px height=200px>
+                            <p class="revname">Ajay Devgan<p>
+                            <p class="revline">this restaurant is one of the best restaurants in india.food quality is very good and fresh.I ate first time in this restaurant and then i became the regular customer of it. </p>
+                          
+                     </div>
+       
+                     <div class="revcard">
+                            <img class="revimg" src="https://filmfare.wwmindia.com/thumb/content/2016/May/paresh_1464614885.jpg?width=1200&height=900" width=200px height=200px>
+                            <p class="revname">Babu Bhaiya<p>
+                            <p class="revline">are deva-re-deva what a quality of food it has.It have a large variety of food options you can eat what you want and of the best quality. </p>
+                          
+                     </div>
+
+                    <div class="urrev">
+                                <p class="urrevhead">Write your own review here by filling the details<p>
+                                <br /><br /><br /><br /><br /><br /><br />
+                                <input type="text" class="urrevname" placeholder="write your name here .."/>
+                                <input type="text" class="urrevemail" placeholder="type your E-mail here.."/>
+                                <br /><br /><br /><br /><br /><br /><br /><br />
+                                <textarea class="revarea"> Write your valuable review here...</textarea>
+                                <br /><br /><br /><br /><br />
+                                <input type="submit"class="revsubmit" value="click me to submit your review">
+                    </div>
+             </div> 
+  <br /><br /><br /><br /><br /><br />
+                        <div class="footer">
+                                <a name="footer"></a>
+                                <p class="fhead">#Connect with us</p>
+                                <a href="http://www.facebook.com/ishwar.kashyap.1253236" target="_blank"><img src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png" height=300px width=400px></a>
+                                <br /><br /><br /><br />
+                                <a class="priv" href="privacy-policy.html" target="_blank">privacy-policy</a>
+                        </div>
+            <br /><br /><br /><br /><br />
+    
+          <a href="#home"><h1 class="end">Back to top</h1></a>
+  </body>
+
+  </html>
